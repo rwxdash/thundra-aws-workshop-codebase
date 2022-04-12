@@ -12,7 +12,7 @@ public class WorkshopController {
 
     @GetMapping("/")
     public String index() {
-        return "Hello World!";
+        return "index";
     }
 
     @PostMapping("/")
@@ -22,7 +22,7 @@ public class WorkshopController {
 
     @GetMapping("/dummy")
     public String dummy() {
-        return "Dummy";
+        return "dummy";
     }
 
 }
