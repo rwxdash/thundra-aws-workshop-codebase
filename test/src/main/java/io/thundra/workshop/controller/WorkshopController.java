@@ -22,7 +22,7 @@ public class WorkshopController {
 
     @GetMapping("/dummy")
     public String dummy() {
-        return "dummy";
+        return "Dummy";
     }
 
 }
