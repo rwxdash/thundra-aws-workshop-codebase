@@ -12,6 +12,11 @@ jobs:
         working-directory: ./test
     steps:
       - uses: actions/checkout@v2
+      - name: GHA Stats
+        uses: aidansteele/gha-stats@v0.3.0
+        with:
+          honeycombApiKey: ${{ secrets.HONEYCOMB_APIKEY }}
+          honeycombDataset: thundra_aws_workshop
       - uses: nanasess/setup-chromedriver@v1
       - uses: actions/setup-java@v2
         with:
